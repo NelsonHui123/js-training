@@ -6,8 +6,12 @@
  *
  */
 
+ //* My code
+function total(arr) {
+    return arr.reduce((a, b) => a + b, 0);
+};
 
-//* Begin of tests
+ //* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof total, 'function')

@@ -10,10 +10,17 @@
  *
  */
 
-
+//* My code
+function jadenCase (str) {
+    var strTemp = str.split(" ");
+    var strResult = [];
+    for (let i = 0; i < strTemp.length; i++) {
+        strResult.push(strTemp[i].charAt(0).toUpperCase() + strTemp[i].slice(1).toLowerCase());
+    }
+    return strResult.join(" ");
+};
 
 //* Begin of tests
 const assert = require('assert')
-
-assert.fail('You must write your own tests')
+assert.strictEqual(jadenCase("abc def"), "Abc Def")
 // End of tests */

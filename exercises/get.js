@@ -8,6 +8,9 @@
  */
 
 // Provided code :
+function get(key) {
+  return sourceObject[key];
+};
 const sourceObject = {
   num: 42,
   bool: true,

@@ -7,9 +7,12 @@
  *
  */
 
+//* My code
+function whisper(str) {
+    return "*" + str.slice().toLowerCase() + "*";
+};
 
 //* Begin of tests
 const assert = require('assert')
-
-assert.fail('You must write your own tests')
+assert.strictEqual(whisper("ABCDEF"), "*abcdef*")
 // End of tests */

@@ -8,6 +8,15 @@
  */
 
 // Your code :
+var circular  = {};
+Object.defineProperties(circular,{
+    circular: {
+        enumerable: true,
+        get: function(){
+            return this;
+        }
+    }
+});
 
 //* Begin of tests
 const assert = require('assert')

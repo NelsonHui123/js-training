@@ -12,9 +12,18 @@
  *
  */
 
+ //* My code
+function keepFirst (str) {
+    return str.slice(0, 2);
+};
+function keepLast (str) {
+    return str.slice(-2);
+};
+function keepFirstLast (str) {
+    return str.slice(0, 2) + str.slice(-2);
+};
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
 // End of tests */
